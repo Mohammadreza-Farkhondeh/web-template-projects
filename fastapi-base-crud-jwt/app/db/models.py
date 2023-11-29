@@ -14,7 +14,7 @@ app_name = settings.APP_NAME
 
 
 class User(Base):
-    name: Mapped[str] = mapped_column(String(30))
+    username: Mapped[str] = mapped_column(String(30))
     fullname: Mapped[Optional[str]]
 
     addresses: Mapped[List["Address"]] = relationship(

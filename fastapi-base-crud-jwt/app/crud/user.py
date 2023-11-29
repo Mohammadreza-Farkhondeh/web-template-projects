@@ -19,4 +19,4 @@ class UserCRUD(CRUDBase[User, UserCreate, UserUpdate]):
         return db.query(self.model).filter(self.model.driver_id == driver_id).offset(skip).limit(limit).all()
 
 
-ride_crud = UserCRUD(User)
+user_crud = UserCRUD(User)
